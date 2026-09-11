@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Mizigo</title>
+<meta name="description" content="How the Mizigo property management app collects, uses and protects your data.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Privacy Policy — Mizigo">
+<meta property="og:description" content="How the Mizigo property management app collects, uses and protects your data.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root{
+    --blue:#1264F5;
+    --blue-dark:#0B4CC4;
+    --blue-tint:#EEF4FF;
+    --ink:#0B1020;
+    --body:#3C4358;
+    --muted:#6B7385;
+    --line:#E4E8F0;
+    --card:#FFFFFF;
+    --bg:#F7F9FC;
+    --radius:16px;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--body);
+    font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- header ---------- */
+  header.hero{
+    background:linear-gradient(160deg,var(--blue) 0%,var(--blue-dark) 100%);
+    color:#fff;
+    padding:56px 24px 64px;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+  .mark{
+    width:40px;height:40px;border-radius:12px;flex:0 0 40px;
+    background:rgba(255,255,255,.16);
+    border:1px solid rgba(255,255,255,.28);
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:20px;color:#fff;
+  }
+  .brand-name{font-weight:700;font-size:18px;letter-spacing:-.01em}
+  h1{
+    margin:0 0 12px;
+    font-size:clamp(30px,6vw,42px);
+    line-height:1.15;
+    letter-spacing:-.03em;
+    font-weight:800;
+    color:#fff;
+  }
+  .lede{margin:0;font-size:17px;color:rgba(255,255,255,.86);max-width:56ch}
+  .stamp{margin-top:28px;display:flex;flex-wrap:wrap;gap:8px}
+  .pill{
+    background:rgba(255,255,255,.14);
+    border:1px solid rgba(255,255,255,.22);
+    border-radius:999px;
+    padding:6px 14px;
+    font-size:13.5px;
+    font-weight:500;
+    color:rgba(255,255,255,.95);
+  }
+
+  /* ---------- layout ---------- */
+  main{padding:0 24px 80px}
+  .sheet{
+    max-width:var(--maxw);margin:-32px auto 0;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:clamp(24px,5vw,48px);
+    box-shadow:0 1px 2px rgba(11,16,32,.04),0 12px 32px rgba(11,16,32,.06);
+  }
+  h2{
+    font-size:22px;font-weight:700;color:var(--ink);
+    letter-spacing:-.02em;line-height:1.3;
+    margin:44px 0 12px;padding-top:28px;border-top:1px solid var(--line);
+  }
+  h3{font-size:16.5px;font-weight:700;color:var(--ink);margin:26px 0 6px;letter-spacing:-.01em}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px;padding-left:22px}
+  li{margin:0 0 7px}
+  strong{color:var(--ink);font-weight:600}
+  a{color:var(--blue);text-decoration:none;font-weight:500;border-bottom:1px solid rgba(18,100,245,.28)}
+  a:hover{border-bottom-color:var(--blue)}
+
+  .intro{font-size:18px;color:var(--body);margin-bottom:4px}
+
+  /* ---------- callout ---------- */
+  .callout{
+    background:var(--blue-tint);
+    border:1px solid rgba(18,100,245,.18);
+    border-left:3px solid var(--blue);
+    border-radius:12px;
+    padding:18px 20px;
+    margin:18px 0 20px;
+  }
+  .callout p:last-child{margin-bottom:0}
+  .callout .title{
+    display:block;font-weight:700;color:var(--blue-dark);
+    font-size:14px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;
+  }
+
+  /* ---------- table ---------- */
+  .table-scroll{overflow-x:auto;margin:0 0 20px;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:15.5px;min-width:460px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{
+    color:var(--ink);font-weight:600;font-size:13px;
+    text-transform:uppercase;letter-spacing:.05em;
+    background:#FAFBFD;
+  }
+  tr:last-child td{border-bottom:0}
+  td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+
+  /* ---------- role list ---------- */
+  .roles{list-style:none;padding:0;margin:0 0 16px}
+  .roles li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid var(--line);margin:0}
+  .roles li:last-child{border-bottom:0}
+  .roles li::before{
+    content:"";position:absolute;left:6px;top:21px;
+    width:8px;height:8px;border-radius:50%;background:var(--blue);
+  }
+
+  /* ---------- steps ---------- */
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0 0 18px}
+  .steps li{
+    counter-increment:s;position:relative;padding:0 0 14px 42px;margin:0;
+  }
+  .steps li::before{
+    content:counter(s);position:absolute;left:0;top:2px;
+    width:26px;height:26px;border-radius:50%;
+    background:var(--blue-tint);color:var(--blue-dark);
+    border:1px solid rgba(18,100,245,.25);
+    font-size:13px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+  }
+
+  /* ---------- contact card ---------- */
+  .contact-card{
+    background:#FAFBFD;border:1px solid var(--line);border-radius:12px;
+    padding:20px 22px;margin:16px 0 0;
+  }
+  .contact-card .label{
+    font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--muted);font-weight:600;margin-bottom:2px;
+  }
+  .contact-card .value{font-size:17px;font-weight:600;color:var(--ink);margin-bottom:14px}
+  .contact-card .value:last-child{margin-bottom:0}
+  .contact-card a{border-bottom:0}
+
+  footer{
+    max-width:var(--maxw);margin:32px auto 0;padding:0 24px;
+    color:var(--muted);font-size:14px;text-align:center;
+  }
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    header.hero{padding:40px 20px 56px}
+    main{padding:0 16px 56px}
+    h2{font-size:20px}
+  }
+  @media print{
+    body{background:#fff}
+    header.hero{background:#fff;color:#000;padding:0 0 16px}
+    h1,.lede,.pill{color:#000}
+    .pill{border:1px solid #ccc;background:none}
+    .sheet{box-shadow:none;border:0;margin:0;padding:0}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">M</div>
+      <div class="brand-name">Mizigo</div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">Mizigo is a property management app for landlords, their staff and their tenants. It records properties, tenancies and rent payments. This policy explains what it collects, why, and what you can do about it.</p>
+    <div class="stamp">
+      <span class="pill">Last updated: 11 September 2026</span>
+      <span class="pill">App ID: ug.mizigo</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="sheet">
+
+  <p class="intro">Mizigo is operated by <strong>Moonsoftware</strong>, Uganda. In this policy, &ldquo;we&rdquo; and &ldquo;us&rdquo; mean Moonsoftware, and &ldquo;the app&rdquo; means the Mizigo Android application published on Google Play under the package name <strong>ug.mizigo</strong>.</p>
+
+  <h2>What we collect</h2>
+
+  <h3>Your account</h3>
+  <ul>
+    <li>Name, email address, phone number</li>
+    <li>Your role on the account: owner, manager, caretaker, accountant or tenant</li>
+  </ul>
+  <p>Collected when you create an account, or when a landlord adds you to theirs. Used to sign you in and to decide what you are allowed to see.</p>
+
+  <h3>Property and tenancy records</h3>
+  <ul>
+    <li>Properties, addresses, units and rent amounts</li>
+    <li>Tenant names, phone numbers, email addresses, units and deposits</li>
+    <li>Maintenance reports</li>
+  </ul>
+  <p>Entered by landlords and their staff. Used to run the account.</p>
+
+  <h3>Payment records</h3>
+  <ul>
+    <li>Amount, date, method, transaction or reference number, bank or mobile money provider</li>
+    <li>Who recorded a payment and who approved it</li>
+    <li>Receipt numbers issued on approval</li>
+  </ul>
+  <p>These are records <em>about</em> rent that has already been paid elsewhere. Mizigo does not move money and does not process rent payments. It stores the proof so the rent record, the receipts and the reports add up.</p>
+
+  <h3>Where rent should arrive</h3>
+  <p>If you are an account owner, the mobile money numbers and bank account number you nominate as your payout details. These are shown to your tenants so they know where to send rent, and are used to check that a scanned receipt names the right destination. They are stored as ordinary text in your account record, the same as any other field you type in.</p>
+
+  <h3>Photographs of receipts</h3>
+  <div class="callout">
+    <span class="title">Receipt images never leave your device</span>
+    <p>When you scan a bank slip or choose a mobile money screenshot, the image is read on your phone using Google ML Kit&rsquo;s on-device text recognition. Only the fields Mizigo extracts &mdash; the amount, the transaction id, the date, the provider &mdash; are saved to your account. The photograph itself is never uploaded, never stored on our servers and never retained by Mizigo.</p>
+    <p>The app contains no image-upload code, no cloud storage SDK and no crash-reporting or analytics SDK that could capture the image in the background.</p>
+  </div>
+
+  <h2>Permissions and device access</h2>
+
+  <h3>Permission you are asked to grant</h3>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Permission</th><th>Why it is used</th></tr></thead>
+    <tbody>
+      <tr><td>Camera</td><td>To scan a bank deposit slip with the on-device text reader. Optional: the app works without it, and you can choose a saved image instead. Nothing is recorded or saved &mdash; the camera preview is read for text and discarded.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Camera is the only runtime permission Mizigo asks for.</p>
+
+  <h3>Choosing an image from your device</h3>
+  <p><strong>Mizigo does not request access to your photo library.</strong> When you upload a mobile money screenshot, Android&rsquo;s own picker opens and you choose one file; the app receives only that single image and only for as long as it takes to read the text from it. No photos or media permission is requested or held.</p>
+
+  <h3>Declared in the app manifest</h3>
+  <p>These are not permissions you grant or can revoke. They are declared so the app can function, and Android grants them automatically at install:</p>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Declared</th><th>Why it is needed</th></tr></thead>
+    <tbody>
+      <tr><td>Internet</td><td>To securely synchronise your Mizigo records with our database and provide the app&rsquo;s online features.</td></tr>
+      <tr><td>Network state</td><td>To detect whether you are online before attempting to sync.</td></tr>
+      <tr><td>Billing</td><td>Required by Google Play in order to offer a subscription inside the app.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>The services we use</h2>
+  <p>Mizigo uses the following services, which process data on our behalf as our processors:</p>
+  <ul>
+    <li><strong>Google Firebase Authentication</strong> &mdash; sign-in, including Google Sign-In. Handles your password, so we never store or see it.</li>
+    <li><strong>Google Cloud Firestore</strong> &mdash; the database where your records are stored.</li>
+    <li><strong>Google ML Kit Text Recognition</strong> &mdash; reads receipts on your device. The model runs locally; the image is not sent anywhere.</li>
+    <li><strong>Google Play Billing</strong> &mdash; handles subscription payments.</li>
+  </ul>
+  <div class="callout">
+    <span class="title">What Mizigo does not include</span>
+    <p>The app ships with <strong>no analytics, no advertising, no crash-reporting and no push-notification SDK</strong>. There is no Firebase Analytics, Crashlytics, Cloud Messaging or Cloud Storage in the build, and no third-party tracking library of any kind.</p>
+  </div>
+
+  <h3>Subscription payments</h3>
+  <p>For Mizigo subscriptions, payment credentials are processed by Google Play against the payment method on your Google account. <strong>Mizigo does not receive or store your card number or any other payment credential.</strong> We receive only Google&rsquo;s confirmation that a subscription is active, and the purchase token that identifies it.</p>
+  <p>This is separate from the rent payment <em>records</em> described above, which are details you or your landlord type or scan in &mdash; amounts, dates, transaction reference numbers and nominated payout accounts &mdash; and which Mizigo does store.</p>
+
+  <h3>When you share a receipt yourself</h3>
+  <p>Mizigo can prepare a receipt, an invite or a report and hand it to another app you choose &mdash; your SMS app, WhatsApp, email or a file manager. That sharing is started by you and completed in that other app, under that app&rsquo;s own privacy policy. Mizigo does not send messages on your behalf and has no server that sends them.</p>
+
+  <h3>Other disclosure</h3>
+  <p>We do not sell your data, we do not use it for advertising, and we do not share it with any third party for their own purposes. We may disclose information where we are required to by applicable law, or where it is necessary to establish, exercise or defend a legal claim.</p>
+
+  <h2>Who can see what</h2>
+  <p>Mizigo restricts data by role, and this is enforced on the server by database security rules, not just in the app:</p>
+  <ul class="roles">
+    <li><strong>Owners</strong> see their whole portfolio &mdash; every property, every tenant, every payment on their account.</li>
+    <li><strong>Managers and caretakers</strong> see only the properties they were assigned. They never see another property&rsquo;s tenants, payments or reports.</li>
+    <li><strong>Accountants</strong> read the portfolio and approve nothing.</li>
+    <li><strong>Tenants</strong> see only their own unit, their own rent, their own receipts and notifications addressed to them. A tenant cannot see another tenant&rsquo;s records.</li>
+  </ul>
+
+  <h2 id="delete">Deleting your account</h2>
+  <p>You can delete your Mizigo account and its data at any time, in either of two ways:</p>
+  <ul class="steps">
+    <li><strong>In the app</strong> &mdash; open <strong>Settings &rarr; Password and security &rarr; Delete account</strong>, confirm, and the deletion begins immediately.</li>
+    <li><strong>On the web</strong> &mdash; use the <a href="delete-account.html">account deletion request page</a>, or email us from the address on your account with the subject <strong>&ldquo;Delete my Mizigo account&rdquo;</strong>.</li>
+  </ul>
+  <p><strong>What is deleted:</strong> your sign-in credentials and profile (name, email, phone, role), and &mdash; if you are an account owner &mdash; your properties, units, tenancies, tenant records, staff assignments, maintenance reports and payout details. Deletion through the app is immediate; a request sent by email is completed within 30 days, and we will confirm when it is done.</p>
+  <p><strong>What may be retained, and why:</strong> certain financial and transaction records may be retained where necessary for accounting, tax, fraud prevention, dispute resolution or another legal obligation &mdash; in Uganda this is generally up to five years. Where retention applies we keep only what is necessary for that purpose (typically the amount, date and reference number of a payment), and we delete or anonymise it once the retention period ends. Google Play retains its own record of any subscription purchase, under Google&rsquo;s policy rather than ours.</p>
+  <p><strong>If you are a tenant:</strong> your landlord holds the tenancy record, and the rent they received is their own business record. Deleting your account removes your access and your personal profile; the landlord&rsquo;s record that rent was paid on a unit remains with their account, for the reasons above.</p>
+
+  <h2>Your other rights</h2>
+  <ul>
+    <li><strong>See and correct</strong> your own details in the app, under <strong>Settings &rarr; Profile</strong>.</li>
+    <li><strong>Request a copy of your data</strong> by emailing us. We will respond within 30 days.</li>
+    <li><strong>Cancel a subscription</strong> at any time in Google Play &rarr; Subscriptions. Cancelling a subscription does not delete your account.</li>
+    <li><strong>Object or complain</strong> &mdash; write to us at the address below, and we will deal with it.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>Data is transmitted over encrypted connections (HTTPS/TLS) and stored in Google Cloud Firestore, protected by access rules that enforce the role restrictions described above. Authentication is handled by Google Firebase, so we never store your password. No system is perfectly secure, and we do not claim otherwise.</p>
+
+  <h2>Children</h2>
+  <p>Mizigo is intended for users aged 18 and above. We do not knowingly collect personal information from children under 18. If we learn that we have collected personal information from a child, we will take reasonable steps to delete it.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially we will say so in the app before the change takes effect, and we will update the date at the top of this page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy, requests for your data, or account deletion requests:</p>
+  <div class="contact-card">
+    <div class="label">Email</div>
+    <div class="value"><a href="mailto:moonsoftware7@gmail.com">moonsoftware7@gmail.com</a></div>
+    <div class="label">Operator</div>
+    <div class="value">Moonsoftware, Uganda</div>
+    <div class="label">Application</div>
+    <div class="value">Mizigo &mdash; ug.mizigo</div>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <p>&copy; 2026 Moonsoftware. Mizigo is a property management application for Android.</p>
+</footer>
+
+</body>
+</html>
