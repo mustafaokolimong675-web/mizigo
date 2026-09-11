@@ -13,43 +13,42 @@ No build step. Plain HTML, one web font, nothing else.
 
 ## Publish
 
-### 1. Push to GitHub
+### 1. GitHub — done
 
-Run these **inside this `privacy-site` folder** — it is a standalone repo, deliberately separate
-from the Android project, which contains a keystore path and a large heap dump that must not be
-pushed anywhere public.
+Live at **https://github.com/mustafaokolimong675-web/mizigo** on `main`. This folder is the repo
+root, deliberately separate from the Android project: that one carries a keystore path and an
+800 MB heap dump and must not be pushed anywhere public.
 
-```bash
-git init -b main
-git add .
-git commit -m "Mizigo privacy policy and account deletion pages"
-gh repo create mizigo-privacy --public --source=. --push
-```
-
-No `gh`? Create an empty repo named `mizigo-privacy` on github.com, then:
+To update the pages later, from this folder:
 
 ```bash
-git remote add origin https://github.com/<your-username>/mizigo-privacy.git
-git push -u origin main
+git add . && git commit -m "Update privacy policy" && git push
 ```
 
-### 2. Deploy on Vercel
+### 2. Vercel — needs your login
 
-1. [vercel.com/new](https://vercel.com/new) → **Import** the `mizigo-privacy` repo
-2. Framework preset: **Other**. Leave build command and output directory empty — it is already static.
-3. **Deploy**
+1. Go to **https://vercel.com/new**
+2. **Import** the `mizigo` repo (authorise Vercel for the `mustafaokolimong675-web` account if
+   it asks)
+3. Framework preset **Other**. Leave build command and output directory empty — the site is
+   already static, and the repo root is the site.
+4. **Deploy**
 
-You get `https://mizigo-privacy.vercel.app`, and every later `git push` redeploys it.
+You get `https://mizigo.vercel.app`, and because Vercel watches the repo, every later `git push`
+redeploys it with no further steps.
 
 Resulting URLs (`cleanUrls` is on, so the `.html` is optional):
 
-- `https://mizigo-privacy.vercel.app/` — privacy policy
-- `https://mizigo-privacy.vercel.app/delete-account` — deletion request page
+- `https://mizigo.vercel.app/` — privacy policy
+- `https://mizigo.vercel.app/delete-account` — deletion request page
+
+Prefer the terminal? `npx vercel login` then `npx vercel --prod` from this folder. The dashboard
+route is better: it wires up redeploy-on-push, which the one-shot CLI deploy does not.
 
 ### GitHub Pages instead
 
 Repo → **Settings → Pages → Source: main / root**. Served at
-`https://<username>.github.io/mizigo-privacy/`. Vercel is preferable: instant deploys, and a
+`https://mustafaokolimong675-web.github.io/mizigo/`. Vercel is preferable: instant deploys, and a
 custom domain later without changing the URL you gave Google.
 
 ---
